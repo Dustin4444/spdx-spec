@@ -3,9 +3,9 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="The Linux Foundation and its Contributors, including SPDX Model contributions from OMG and its Contributors." /><link rel="canonical" href="https://spdx.github.io/spdx-spec/v3.0.1/serializations/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="The Linux Foundation and its Contributors, including SPDX Model contributions from OMG and its Contributors." /><link rel="canonical" href="https://spdx.github.io/spdx-spec/v3.1-dev/serializations/" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>6. Model and serializations - SPDX Specification 3.1-RC1</title>
+    <title>6. Model and serializations - SPDX Specification 3.1-dev</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
@@ -16,7 +16,7 @@
         // Current page data
         var mkdocs_page_name = "6. Model and serializations";
         var mkdocs_page_input_path = "serializations.md";
-        var mkdocs_page_url = "/spdx-spec/v3.0.1/serializations/";
+        var mkdocs_page_url = "/spdx-spec/v3.1-dev/serializations/";
       </script>
     
     <!--[if lt IE 9]>
@@ -33,7 +33,7 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-          <a href=".." class="icon icon-home"> SPDX Specification 3.1-RC1
+          <a href=".." class="icon icon-home"> SPDX Specification 3.1-dev
         </a><div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
       <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
@@ -94,6 +94,8 @@
     <li class="toctree-l3"><a class="reference internal" href="#json-ld-validation">JSON-LD validation</a>
     </li>
         </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#file-naming">File naming</a>
     </li>
     </ul>
                 </li>
@@ -172,6 +174,10 @@
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Core/Classes/Requirement/">Requirement</a>
                 </li>
+                <li class="toctree-l3"><a class="reference internal" href="../model/Core/Classes/Role/">Role</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../model/Core/Classes/RoleRelationship/">RoleRelationship</a>
+                </li>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Core/Classes/SoftwareAgent/">SoftwareAgent</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Core/Classes/SpdxDocument/">SpdxDocument</a>
@@ -195,6 +201,10 @@
                 <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/algorithm/">algorithm</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/annotationType/">annotationType</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/assignedBy/">assignedBy</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/authorization/">authorization</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/beginIntegerRange/">beginIntegerRange</a>
                 </li>
@@ -258,6 +268,8 @@
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/geographicPointLocation/">geographicPointLocation</a>
                 </li>
+                <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/givenRole/">givenRole</a>
+                </li>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/hashValue/">hashValue</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/headquartersLocation/">headquartersLocation</a>
@@ -304,8 +316,6 @@
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/processReadiness/">processReadiness</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/processVersion/">processVersion</a>
-                </li>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/profileConformance/">profileConformance</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/provinceStateCode/">provinceStateCode</a>
@@ -314,13 +324,19 @@
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/rationale/">rationale</a>
                 </li>
+                <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/referenceSpecification/">referenceSpecification</a>
+                </li>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/relationshipType/">relationshipType</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/releaseTime/">releaseTime</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/requirementStatement/">requirementStatement</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/requirementUUID/">requirementUUID</a>
+                <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/requirementUID/">requirementUID</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/responsibility/">responsibility</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/roleQualification/">roleQualification</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/rootElement/">rootElement</a>
                 </li>
@@ -359,6 +375,8 @@
                 <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/value/">value</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/verifiedUsing/">verifiedUsing</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../model/Core/Properties/version/">version</a>
                 </li>
     </ul>
                 </li>
@@ -414,7 +432,7 @@
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Core/Datatypes/MediaType/">MediaType</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../model/Core/Datatypes/SemVer/">SemVer</a>
+                <li class="toctree-l3"><a class="reference internal" href="../model/Core/Datatypes/VersionNumber/">VersionNumber</a>
                 </li>
     </ul>
                 </li>
@@ -924,11 +942,7 @@
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Hardware/Properties/dimensions/">dimensions</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../model/Hardware/Properties/hardwareVersion/">hardwareVersion</a>
-                </li>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Hardware/Properties/hazard/">hazard</a>
-                </li>
-                <li class="toctree-l3"><a class="reference internal" href="../model/Hardware/Properties/itemVersion/">itemVersion</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../model/Hardware/Properties/mass/">mass</a>
                 </li>
@@ -1180,6 +1194,8 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" >Classes</a>
     <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../model/FunctionalSafety/Classes/Assumption/">Assumption</a>
+                </li>
                 <li class="toctree-l3"><a class="reference internal" href="../model/FunctionalSafety/Classes/EvaluationResult/">EvaluationResult</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../model/FunctionalSafety/Classes/EvidenceRelationship/">EvidenceRelationship</a>
@@ -1190,13 +1206,17 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" >Properties</a>
     <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../model/FunctionalSafety/Properties/assumptionStatement/">assumptionStatement</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../model/FunctionalSafety/Properties/assumptionUID/">assumptionUID</a>
+                </li>
                 <li class="toctree-l3"><a class="reference internal" href="../model/FunctionalSafety/Properties/evaluation/">evaluation</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../model/FunctionalSafety/Properties/evaluationBasedOn/">evaluationBasedOn</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../model/FunctionalSafety/Properties/evidenceCategory/">evidenceCategory</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../model/FunctionalSafety/Properties/evidenceUUID/">evidenceUUID</a>
+                <li class="toctree-l3"><a class="reference internal" href="../model/FunctionalSafety/Properties/evidenceUID/">evidenceUID</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../model/FunctionalSafety/Properties/verificationMethod/">verificationMethod</a>
                 </li>
@@ -1204,7 +1224,7 @@
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../model/FunctionalSafety/Properties/verificationPrecondition/">verificationPrecondition</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../model/FunctionalSafety/Properties/verificationUUID/">verificationUUID</a>
+                <li class="toctree-l3"><a class="reference internal" href="../model/FunctionalSafety/Properties/verificationUID/">verificationUID</a>
                 </li>
     </ul>
                 </li>
@@ -1233,6 +1253,8 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../annexes/pkg-url-specification/">E. Package URL specification</a>
                   </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../annexes/class-hierarchy/">F. Class hierarchy</a>
+                  </li>
               </ul>
               <p class="caption"><span class="caption-text">licenses</span></p>
               <ul>
@@ -1248,7 +1270,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
       <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="..">SPDX Specification 3.1-RC1</a>
+          <a href="..">SPDX Specification 3.1-dev</a>
         
       </nav>
       <div class="wy-nav-content">
@@ -1382,6 +1404,27 @@ specification if it adheres to the following two validation criteria:</p>
 <a href="https://spdx.org/schema/3.1/spdx-json-schema.json">https://spdx.org/schema/3.1/spdx-json-schema.json</a></p>
 <p>The SPDX 3 OWL ontology is available at:
 <a href="https://spdx.org/rdf/3.1/spdx-model.ttl">https://spdx.org/rdf/3.1/spdx-model.ttl</a></p>
+<h2 id="file-naming">File naming</h2>
+<p>It should be easy to recognize an SPDX 3 file in a file system without opening the file.</p>
+<p>A suggested naming convention is:</p>
+<table>
+<thead>
+<tr>
+<th>Format</th>
+<th>Extension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>JSON-LD</td>
+<td>*.spdx3.json</td>
+</tr>
+<tr>
+<td>RDF/XML</td>
+<td>*.spdx3.rdf</td>
+</tr>
+</tbody>
+</table>
               
             </div>
           </div><footer>
@@ -1394,7 +1437,7 @@ specification if it adheres to the following two validation criteria:</p>
 
   <div role="contentinfo">
     <!-- Copyright etc -->
-      <p>SPDX v3.1-RC1 Copyright © 2010-2026, The Linux Foundation and its Contributors, including SPDX Model contributions from OMG and its Contributors.</p>
+      <p>SPDX v3.1-dev Copyright © 2010-2026, The Linux Foundation and its Contributors, including SPDX Model contributions from OMG and its Contributors.</p>
   </div>
 
   Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.

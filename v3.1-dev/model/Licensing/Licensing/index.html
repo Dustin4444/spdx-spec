@@ -3,9 +3,9 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="The Linux Foundation and its Contributors, including SPDX Model contributions from OMG and its Contributors." /><link rel="canonical" href="https://spdx.github.io/spdx-spec/v3.0.1/model/Licensing/Licensing/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="The Linux Foundation and its Contributors, including SPDX Model contributions from OMG and its Contributors." /><link rel="canonical" href="https://spdx.github.io/spdx-spec/v3.1-dev/model/Licensing/Licensing/" />
       <link rel="shortcut icon" href="../../../img/favicon.ico" />
-    <title>Description - SPDX Specification 3.1-RC1</title>
+    <title>Description - SPDX Specification 3.1-dev</title>
     <link rel="stylesheet" href="../../../css/theme.css" />
     <link rel="stylesheet" href="../../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
@@ -16,7 +16,7 @@
         // Current page data
         var mkdocs_page_name = "Description";
         var mkdocs_page_input_path = "model/Licensing/Licensing.md";
-        var mkdocs_page_url = "/spdx-spec/v3.0.1/model/Licensing/Licensing/";
+        var mkdocs_page_url = "/spdx-spec/v3.1-dev/model/Licensing/Licensing/";
       </script>
     
     <!--[if lt IE 9]>
@@ -33,7 +33,7 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-          <a href="../../.." class="icon icon-home"> SPDX Specification 3.1-RC1
+          <a href="../../.." class="icon icon-home"> SPDX Specification 3.1-dev
         </a><div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
       <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
@@ -152,6 +152,10 @@
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../Core/Classes/Requirement/">Requirement</a>
                 </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Core/Classes/Role/">Role</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Core/Classes/RoleRelationship/">RoleRelationship</a>
+                </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../Core/Classes/SoftwareAgent/">SoftwareAgent</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../Core/Classes/SpdxDocument/">SpdxDocument</a>
@@ -175,6 +179,10 @@
                 <li class="toctree-l3"><a class="reference internal" href="../../Core/Properties/algorithm/">algorithm</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../Core/Properties/annotationType/">annotationType</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Core/Properties/assignedBy/">assignedBy</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Core/Properties/authorization/">authorization</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../Core/Properties/beginIntegerRange/">beginIntegerRange</a>
                 </li>
@@ -238,6 +246,8 @@
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../Core/Properties/geographicPointLocation/">geographicPointLocation</a>
                 </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Core/Properties/givenRole/">givenRole</a>
+                </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../Core/Properties/hashValue/">hashValue</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../Core/Properties/headquartersLocation/">headquartersLocation</a>
@@ -284,8 +294,6 @@
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../Core/Properties/processReadiness/">processReadiness</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../../Core/Properties/processVersion/">processVersion</a>
-                </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../Core/Properties/profileConformance/">profileConformance</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../Core/Properties/provinceStateCode/">provinceStateCode</a>
@@ -294,13 +302,19 @@
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../Core/Properties/rationale/">rationale</a>
                 </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Core/Properties/referenceSpecification/">referenceSpecification</a>
+                </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../Core/Properties/relationshipType/">relationshipType</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../Core/Properties/releaseTime/">releaseTime</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../Core/Properties/requirementStatement/">requirementStatement</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../../Core/Properties/requirementUUID/">requirementUUID</a>
+                <li class="toctree-l3"><a class="reference internal" href="../../Core/Properties/requirementUID/">requirementUID</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Core/Properties/responsibility/">responsibility</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Core/Properties/roleQualification/">roleQualification</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../Core/Properties/rootElement/">rootElement</a>
                 </li>
@@ -339,6 +353,8 @@
                 <li class="toctree-l3"><a class="reference internal" href="../../Core/Properties/value/">value</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../Core/Properties/verifiedUsing/">verifiedUsing</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Core/Properties/version/">version</a>
                 </li>
     </ul>
                 </li>
@@ -394,7 +410,7 @@
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../Core/Datatypes/MediaType/">MediaType</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../../Core/Datatypes/SemVer/">SemVer</a>
+                <li class="toctree-l3"><a class="reference internal" href="../../Core/Datatypes/VersionNumber/">VersionNumber</a>
                 </li>
     </ul>
                 </li>
@@ -906,11 +922,7 @@
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../Hardware/Properties/dimensions/">dimensions</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../../Hardware/Properties/hardwareVersion/">hardwareVersion</a>
-                </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../Hardware/Properties/hazard/">hazard</a>
-                </li>
-                <li class="toctree-l3"><a class="reference internal" href="../../Hardware/Properties/itemVersion/">itemVersion</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../Hardware/Properties/mass/">mass</a>
                 </li>
@@ -1162,6 +1174,8 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" >Classes</a>
     <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../FunctionalSafety/Classes/Assumption/">Assumption</a>
+                </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../FunctionalSafety/Classes/EvaluationResult/">EvaluationResult</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../FunctionalSafety/Classes/EvidenceRelationship/">EvidenceRelationship</a>
@@ -1172,13 +1186,17 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" >Properties</a>
     <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../FunctionalSafety/Properties/assumptionStatement/">assumptionStatement</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../FunctionalSafety/Properties/assumptionUID/">assumptionUID</a>
+                </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../FunctionalSafety/Properties/evaluation/">evaluation</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../FunctionalSafety/Properties/evaluationBasedOn/">evaluationBasedOn</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../FunctionalSafety/Properties/evidenceCategory/">evidenceCategory</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../../FunctionalSafety/Properties/evidenceUUID/">evidenceUUID</a>
+                <li class="toctree-l3"><a class="reference internal" href="../../FunctionalSafety/Properties/evidenceUID/">evidenceUID</a>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../FunctionalSafety/Properties/verificationMethod/">verificationMethod</a>
                 </li>
@@ -1186,7 +1204,7 @@
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../FunctionalSafety/Properties/verificationPrecondition/">verificationPrecondition</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../../FunctionalSafety/Properties/verificationUUID/">verificationUUID</a>
+                <li class="toctree-l3"><a class="reference internal" href="../../FunctionalSafety/Properties/verificationUID/">verificationUID</a>
                 </li>
     </ul>
                 </li>
@@ -1215,6 +1233,8 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../../annexes/pkg-url-specification/">E. Package URL specification</a>
                   </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../annexes/class-hierarchy/">F. Class hierarchy</a>
+                  </li>
               </ul>
               <p class="caption"><span class="caption-text">licenses</span></p>
               <ul>
@@ -1230,7 +1250,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
       <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../..">SPDX Specification 3.1-RC1</a>
+          <a href="../../..">SPDX Specification 3.1-dev</a>
         
       </nav>
       <div class="wy-nav-content">
@@ -1248,7 +1268,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <!-- Automatically generated by spec-parser v3.0.1 on 2026-03-02T20:42:54.908140+00:00 -->
+                <!-- Automatically generated by spec-parser v3.0.1 on 2026-06-27T12:46:13.510124+00:00 -->
 <!-- SPDX-License-Identifier: Community-Spec-1.0 -->
 
 <h1 id="licensing">Licensing</h1>
@@ -1264,21 +1284,25 @@ Software Artifact shall have a <code>Relationship</code> of type <code>hasConclu
 <a href="../../../annexes/spdx-license-expressions/">license expression strings</a>)
 and in the ExpandedLicensing profile (classes and properties used for a
 fully parsed syntax tree of license expressions).</p>
-<p>There are 2 relationship types related to licensing - <code>hasDeclaredLicense</code> and
-<code>hasConcludedLicense</code>.</p>
-<p>If the <code>hasConcludedLicense</code> for a Software Artifact is not the same as its
-<code>hasDeclaredLicense</code>, a written explanation should be provided in the
-<code>hasConcludedLicense</code> relationship <code>comment</code> field.</p>
-<p>A written explanation of a relationship to a <code>NoAssertionLicense</code> may be
-provided in the <code>comment</code> field for the relationship.</p>
+<p>There are 2 relationship types related to licensing -
+<code>hasDeclaredLicense</code> and <code>hasConcludedLicense</code>:</p>
+<ul>
+<li>Their <code>from</code> property shall reference an Artifact object.</li>
+<li>Their <code>to</code> property shall reference an AnyLicenseInfo object.</li>
+<li>If the <code>to</code> of an Artifact's <code>hasConcludedLicense</code> is not the same as
+  the <code>to</code> of its <code>hasDeclaredLicense</code>, a written explanation should be
+  provided in the <code>comment</code> field of the <code>hasConcludedLicense</code> relationship.</li>
+<li>A written explanation of a relationship to a <code>NoAssertionLicense</code> may be
+  provided in the <code>comment</code> field for the relationship.</li>
+</ul>
 <p><em>hasDeclaredLicense</em></p>
 <p>A hasDeclaredLicense identifies the license information actually found in the
-Software Artifact, for example as detected by use of automated tooling.</p>
-<p>This field is not intended to capture license information obtained from an
+Artifact, for example as detected by use of automated tooling.</p>
+<p>This relationship is not intended to capture license information obtained from an
 external source, such as a package's website. Such information can be
-included, as needed, in the hasConcludedLicense field.</p>
+included, as needed, in the hasConcludedLicense relationship.</p>
 <p>A hasDeclaredLicense may be expressed differently in practice for different
-types of Software Artifacts. For example:</p>
+types of Artifacts. For example:</p>
 <ul>
 <li>for Packages,
   it would include license info for the Package as a
@@ -1308,7 +1332,7 @@ indicates that one of the following applies:</p>
 <ul>
 <li>the SPDX data creator has attempted to but cannot reach a reasonable
   objective determination;</li>
-<li>the SPDX data creator has made no attempt to determine this field; or</li>
+<li>the SPDX data creator has made no attempt to determine this relationship; or</li>
 <li>the SPDX data creator has intentionally provided no information (no meaning
   should be implied by doing so).</li>
 </ul>
@@ -1319,18 +1343,18 @@ NoAssertionLicense since the latter is a "known unknown" whereas no assumptions
 can be made from a missing hasDeclaredLicense relationship.</p>
 <p><em>hasConcludedLicense</em></p>
 <p>A hasConcludedLicense is the license identified by the SPDX data creator,
-based on analyzing the license information in the Software Artifact
+based on analyzing the license information in the Artifact
 and other information to arrive at a reasonably objective
-conclusion as to what license governs the Software Artifact.</p>
+conclusion as to what license governs the Artifact.</p>
 <p>A hasConcludedLicense relationship to NoneLicense indicates that the
 SPDX data creator has looked and did not find any license information for this
-Software Artifact.</p>
+Artifact.</p>
 <p>A hasConcludedLicense relationship to NoAssertionLicense
 indicates that one of the following applies:</p>
 <ul>
 <li>the SPDX data creator has attempted to but cannot reach a reasonable
   objective determination;</li>
-<li>the SPDX data creator has made no attempt to determine this field; or</li>
+<li>the SPDX data creator has made no attempt to determine this relationship; or</li>
 <li>the SPDX data creator has intentionally provided no information (no
   meaning should be implied by doing so).</li>
 </ul>
@@ -1340,7 +1364,7 @@ about whether or not a hasConcludedLicense exists.</p>
 NoAssertionLicense since the latter is a "known unknown" whereas no assumptions
 can be made from a missing hasConcludedLicense relationship.</p>
 <h2 id="metadata">Metadata</h2>
-<p><code>https://spdx.org/rdf/3.1/terms/Licensing</code></p>
+<p><code>https://spdx.org/rdf/3/terms/Licensing</code></p>
 <table>
 <thead>
 <tr>
@@ -1376,7 +1400,7 @@ the following has to hold:</p>
 
   <div role="contentinfo">
     <!-- Copyright etc -->
-      <p>SPDX v3.1-RC1 Copyright © 2010-2026, The Linux Foundation and its Contributors, including SPDX Model contributions from OMG and its Contributors.</p>
+      <p>SPDX v3.1-dev Copyright © 2010-2026, The Linux Foundation and its Contributors, including SPDX Model contributions from OMG and its Contributors.</p>
   </div>
 
   Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
